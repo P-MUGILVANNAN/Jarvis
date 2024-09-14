@@ -53,16 +53,17 @@ function takeCommand(message) {
     } else if (message.includes("open youtube")) {
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...");
-    } else if (message.includes("open techiesms")) {
+    } else if (message.includes("open text sms")) {
         window.open("https://techiesms.com", "_blank");
         speak("Opening Techiesms...");
-    }else if (message.includes("open Wix")) {
+    }
+    else if (message.includes("open Vicks")) {
         window.open("https://manage.wix.com/account/websites?referralAdditionalInfo=Route", "_blank");
         speak("Opening Wix Studio...");
     }
-    else if (message.includes("open chatgpt")) {
+    else if (message.includes("open Chat gpt")) {
         window.open("https://chatgpt.com/", "_blank");
-        speak("Opening Chatgpt...");
+        speak("Opening ChatGPT...");
     }
     else if (message.includes("open my website")) {
         window.open("https://chirrenthen13.wixsite.com/chirrenthen", "_blank");
@@ -76,7 +77,7 @@ function takeCommand(message) {
         window.open("https://gemini.google.com/app?hl=en-IN", "_blank");
         speak("Opening Gemini AI...");
     }
-    else if (message.includes("open techiesms youtube")) {
+    else if (message.includes("open text sms youtube")) {
         window.open("https://www.youtube.com/techiesms", "_blank");
         speak("Opening Techiesms in youtube...");
     }
@@ -96,8 +97,8 @@ function takeCommand(message) {
         const date = new Date().toLocaleString(undefined, { month: "short", day: "numeric" });
         const finalText = "Today's date is " + date;
         speak(finalText);
-    } else if (message.includes('arduino')) {
-        window.open('arduinoide:///');
+    } else if (message.includes('arduinoIDE')) {
+        window.open('C:\Users\Ashwini\AppData\Local\Programs\Arduino IDE\Arduino IDE.exe');
         const finalText = "Opening ArduinoIde";
         speak(finalText);
     } else {
