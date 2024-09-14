@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Courier New", monospace;
 }
 
 .main {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    background: #000;
+    background: #18ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,14 +36,14 @@
 }
 
 .main .image-container h1 {
-    color: #00bcd4;
+    color: #1a237e;
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
 }
 
 .main .image-container p {
-    color: #324042;
+    color: #1a237e;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -73,11 +73,11 @@
 
 .main .input .talk i {
     font-size: 20px;
-    color: #aed0d0;
+    color: #4fc3f7;
 }
 
 .main .input .content {
-    color: #aed0d0;
+    color: #4fc3f7;
     font-size: 15px;
     margin-right: 20px;
 }
