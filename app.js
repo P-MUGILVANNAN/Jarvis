@@ -16,16 +16,16 @@ function wishMe() {
     var hour = day.getHours();
 
     if (hour >= 0 && hour < 12) {
-        speak("Good Morning Mugil...");
+        speak("Good Morning Chirrenthen...");
     } else if (hour >= 12 && hour < 17) {
-        speak("Good Afternoon Mugil...");
+        speak("Good Afternoon Chirrenthen...");
     } else {
-        speak("Good Evening Mugil...");
+        speak("Good Evening Chirrenthen...");
     }
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing Bot...");
+    speak("Initializing your Assistant Chirrenthen...");
     wishMe();
 });
 
@@ -40,35 +40,47 @@ recognition.onresult = (event) => {
 };
 
 btn.addEventListener('click', () => {
-    content.textContent = "Listening...";
+    content.textContent = "I'm here...";
     recognition.start();
 });
 
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
-    } else if (message.includes("open google")) {
-        window.open("https://google.com", "_blank");
-        speak("Opening Google...");
+    } else if (message.includes("open github")) {
+        window.open("https://github.com/chirrenthen", "_blank");
+        speak("Opening Github...");
     } else if (message.includes("open youtube")) {
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...");
-    } else if (message.includes("open facebook")) {
-        window.open("https://facebook.com", "_blank");
-        speak("Opening Facebook...");
-    }else if (message.includes("open instagram")) {
-        window.open("https://instagram.com", "_blank");
-        speak("Opening Instagram...");
+    } else if (message.includes("open techiesms")) {
+        window.open("https://techiesms.com", "_blank");
+        speak("Opening Techiesms...");
+    }else if (message.includes("open Wix")) {
+        window.open("https://manage.wix.com/account/websites?referralAdditionalInfo=Route", "_blank");
+        speak("Opening Wix Studio...");
     }
-    else if (message.includes("open jiocinema")) {
-        window.open("https://jiocinema.com", "_blank");
-        speak("Opening Jio cinema...");
+    else if (message.includes("open chatgpt")) {
+        window.open("https://chatgpt.com/", "_blank");
+        speak("Opening Chatgpt...");
     }
-    else if (message.includes("open spotify")) {
-        window.open("https://spotify.com", "_blank");
-        speak("Opening Spotify...");
+    else if (message.includes("open my website")) {
+        window.open("https://chirrenthen13.wixsite.com/chirrenthen", "_blank");
+        speak("Opening your Website...");
     }
-     else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
+    else if (message.includes("open arduino cloud")) {
+        window.open("https://app.arduino.cc", "_blank");
+        speak("Opening Arduino Cloud...");
+    }
+    else if (message.includes("open gemini")) {
+        window.open("https://gemini.google.com/app?hl=en-IN", "_blank");
+        speak("Opening Gemini AI...");
+    }
+    else if (message.includes("open techiesms youtube")) {
+        window.open("https://www.youtube.com/techiesms", "_blank");
+        speak("Opening Techiesms in youtube...");
+    }
+    else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
         speak(finalText);
@@ -84,9 +96,9 @@ function takeCommand(message) {
         const date = new Date().toLocaleString(undefined, { month: "short", day: "numeric" });
         const finalText = "Today's date is " + date;
         speak(finalText);
-    } else if (message.includes('calculator')) {
-        window.open('Calculator:///');
-        const finalText = "Opening Calculator";
+    } else if (message.includes('arduino')) {
+        window.open('arduinoide:///');
+        const finalText = "Opening ArduinoIde";
         speak(finalText);
     } else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
