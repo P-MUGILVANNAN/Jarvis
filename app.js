@@ -25,7 +25,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing your Assistant Chirrenthen...");
+    speak("Initializing your Assistant...");
     wishMe();
 });
 
@@ -53,15 +53,15 @@ function takeCommand(message) {
     } else if (message.includes("open youtube")) {
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...");
-    } else if (message.includes("open techieSMS")) {
+    } else if (message.includes("open techiesms")) {
         window.open("https://techiesms.com", "_blank");
-        speak("Opening TechieSMS...");
+        speak("Opening Techiesms...");
     }
     else if (message.includes("open my web editor")) {
         window.open("https://manage.wix.com/account/websites?referralAdditionalInfo=Route", "_blank");
         speak("Opening Wix Studio...");
     }
-    else if (message.includes("open chat gpt ai")) {
+    else if (message.includes("open chatgpt")) {
         window.open("https://chatgpt.com/", "_blank");
         speak("Opening ChatGPT...");
     }
@@ -77,7 +77,7 @@ function takeCommand(message) {
         window.open("https://gemini.google.com/app?hl=en-IN", "_blank");
         speak("Opening Gemini AI...");
     }
-    else if (message.includes("open sachin soni's youtube channel")) {
+    else if (message.includes("open techiesms youtube")) {
         window.open("https://www.youtube.com/techiesms", "_blank");
         speak("Opening Techiesms in youtube...");
     }
@@ -97,8 +97,8 @@ function takeCommand(message) {
         const date = new Date().toLocaleString(undefined, { month: "short", day: "numeric" });
         const finalText = "Today's date is " + date;
         speak(finalText);
-    } else if (message.includes("open arduino ide on my computer")) {
-        window.open('C:\Users\Ashwini\AppData\Local\Programs\Arduino IDE\Arduino IDE.exe');
+    } else if (message.includes("open google")) {
+        window.open('C:\Program Files\Google\Chrome\Application');
         const finalText = "Opening ArduinoIde";
         speak(finalText);
     } else {
